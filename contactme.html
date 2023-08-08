@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src=""></script>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Contact Me</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <!--<li><a href="services.html">Services</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <section class="fourthSection">
+        <div class="leftSection">
+            <img src="bg.png" alt="">
+        </div>
+        <div class="rightSection">
+            <span class="purpleContact">Get in touch!</span>
+
+            <div>Feel free to reachout for any project-related inquiries and I'll follow-up as soon as possible</div>
+            <br>
+            <div class="form">
+                <form action="form.txt" method="post">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required><br><br>
+
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    <a href="message.html" target="_blank">
+                        <input class="btn" type="submit" value="Submit">
+                    </a>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
