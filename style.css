@@ -242,7 +242,7 @@ th {
 
 .thirdSection .leftSection, .thirdSection .rightSection {
     flex: 1;
-    border: 1px solid #ccc;
+    border: none;
     padding: 20px;
     margin-right: 20px;
 }
