@@ -61,13 +61,13 @@ main hr {
     width: 40%;
 }
 
-.leftSection {
+.firstSection .leftSection {
     font-size: 3rem;
 }
-.leftSection .buttons{
+.firstSection .leftSection .buttons{
     padding: 50px 0;
 }
-.leftSection .btn{
+.firstSection .leftSection .btn{
     padding: 12px;
     background-color: #1e2167;
     color: white;
@@ -76,7 +76,7 @@ main hr {
     font-size: 20px;
     cursor: pointer;
 }
-.rightSection img {
+.firstSection .rightSection img {
     width: 80%;
 }
 
@@ -103,14 +103,14 @@ main hr {
 }
 
 .secondSection #element {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
 }
 
 .secondSection .box {
     background: white;
     width: 76vw;
     height: 2px;
-    margin: 56px 0;
+    margin: 56px;
     display: flex;
 }
 
@@ -118,7 +118,7 @@ main hr {
     height: 93px;
     width: 1px;
     background-color: white;
-    margin: 0 115px;
+    margin: 0 190px;
 }
 
 .image-top {
@@ -132,15 +132,15 @@ main hr {
     position: relative;
     top: 75px;
     width: 150px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .vertical-desc {
     position: relative;
     top: 86px;
     color: gray;
-    width: 150px;
-    font-size: 12px;
+    width: 250px;
+    font-size: 14px;
 }
 footer{
     background-color: rgb(23, 23, 67);
@@ -175,4 +175,109 @@ footer ul li a:hover {
     text-decoration: none;
     color: rgb(152, 152, 243);
     font-size: 1.01rem;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #9c97f1;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #9c97f1;
+}
+.education{
+    text-align: center;
+}
+.myskills{
+    text-align: center;
+    justify-content: center;
+}
+#skills{
+    text-align: center;
+}
+.thirdSection{
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdSection .box {
+    background: white;
+    width: 90vw;
+    height: 2px;
+    margin: 56px;
+    display: flex;
+    justify-content: center;
+}
+
+.thirdSection .vertical {
+    height: 50px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px
+}
+
+.thirdSection .vertical-title {
+    position: relative;
+    top: 25px;
+    width: 50px;
+    font-size: 14px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.thirdSection .leftSection, .thirdSection .rightSection {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-right: 20px;
+}
+.fourthSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0;
+
+}
+
+.fourthSection>div {
+    width: 40%;
+}
+
+.fourthSection .rightSection {
+    font-size: 1.3rem;
+}
+.fourthSection .rightSection .buttons{
+    padding: 50px 0;
+}
+.fourthSection .rightSection .btn{
+    padding: 12px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fourthSection .leftSection img {
+    width: 80%;
+}
+
+.purpleContact {
+    color: rgb(141, 50, 227);
+    font-size: 2rem;
 }
