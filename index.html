@@ -16,8 +16,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <!--<li><a href="services.html">Services</a></li>-->
+                <li><a href="contactme.html">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -29,8 +29,10 @@
                 <div> and I am a passionate</div>
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn">Visit Github</button>
+                    <button class="btn" id="downloadButton">Download Resume</button>
+                    <a href="https://github.com/Lakshmi-Likitha" target="_blank">
+                    <button class="btn" id="visitGithub">Visit Github</button>
+                    </a>
                 </div>
             </div>
             <div class="rightSection">
@@ -50,6 +52,17 @@
         var typed = new Typed('#element', {
             strings: ['Web Developer,', 'Coder', 'and a Student.'],
             typeSpeed: 50,
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const downloadButton = document.getElementById("downloadButton");
+            downloadButton.addEventListener("click", function () {
+                const link = document.createElement("a");
+                link.href = "https://drive.google.com/file/d/1MnxZHfdJlyUvtybgZKctRhX2U0oxRO5K/view?usp=sharing"; // Replace with the actual URL of your hosted resume
+                link.download = "Likhitha's Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
         });
     </script>
 </body>
